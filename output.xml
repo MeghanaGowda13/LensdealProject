@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.11.7 on win32)" generated="2024-02-05T17:22:49.631815" rpa="true" schemaversion="5">
+<suite id="s1" name="TcloginPage" source="C:\Users\Meghana\PycharmProjects\Indolens\TestCases\TcloginPage.robot">
+<test id="s1-t1" name="LoginPageTestCase_TC001" line="10">
+<kw name="Open Chrome Browser" owner="LoginModKeyWords">
+<kw name="Open Browser" owner="Selenium2Library">
+<msg time="2024-02-05T17:22:50.006381" level="INFO">Opening browser 'chrome' to base url 'http://192.168.1.48:8000/admin'.</msg>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-02-05T17:22:50.005382" elapsed="7.489498"/>
+</kw>
+<kw name="Maximize Browser Window" owner="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-02-05T17:22:57.494880" elapsed="0.181409"/>
+</kw>
+<kw name="Set Selenium Speed" owner="Selenium2Library">
+<arg>3</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2024-02-05T17:22:57.676289" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-02-05T17:22:50.003384" elapsed="7.672905"/>
+</kw>
+<kw name="Login Credentials User_Name" owner="LoginModKeyWords">
+<kw name="Input Text" owner="Selenium2Library">
+<msg time="2024-02-05T17:22:57.678288" level="INFO">Typing text 'itsupport@vcnrtech.in' into text field 'xpath://input[@id='email']'.</msg>
+<arg>${Enter_Email_address}</arg>
+<arg>${EMAIl}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-05T17:22:57.678288" elapsed="9.286236"/>
+</kw>
+<arg>${EMAIl}</arg>
+<status status="PASS" start="2024-02-05T17:22:57.677287" elapsed="9.287237"/>
+</kw>
+<kw name="Login Credentials Password" owner="LoginModKeyWords">
+<kw name="Input Text" owner="Selenium2Library">
+<msg time="2024-02-05T17:23:06.966534" level="INFO">Typing text 'Indolens@#1234' into text field 'xpath://input[@id='password']'.</msg>
+<arg>${Enter_Password}</arg>
+<arg>${PSWRD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-05T17:23:06.965528" elapsed="9.179624"/>
+</kw>
+<arg>${PSWRD}</arg>
+<status status="PASS" start="2024-02-05T17:23:06.965528" elapsed="9.179624"/>
+</kw>
+<kw name="UnSelect the Remember me checkbox" owner="LoginModKeyWords">
+<kw name="Unselect Checkbox" owner="Selenium2Library">
+<msg time="2024-02-05T17:23:16.148386" level="INFO">Unselecting checkbox 'xpath://input[@id='basic-checkbox']'.</msg>
+<arg>${Remember_Me}</arg>
+<doc>Removes the selection of checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-05T17:23:16.147394" elapsed="15.185905"/>
+</kw>
+<status status="PASS" start="2024-02-05T17:23:16.146386" elapsed="15.186913"/>
+</kw>
+<kw name="Select the Remember me checkbox" owner="LoginModKeyWords">
+<kw name="Select Checkbox" owner="Selenium2Library">
+<msg time="2024-02-05T17:23:31.336298" level="INFO">Selecting checkbox 'xpath://input[@id='basic-checkbox']'.</msg>
+<arg>${Remember_Me}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-05T17:23:31.335301" elapsed="15.149857"/>
+</kw>
+<status status="PASS" start="2024-02-05T17:23:31.334300" elapsed="15.150858"/>
+</kw>
+<kw name="Click on Login Page Submit Button" owner="LoginModKeyWords">
+<kw name="Click Button" owner="Selenium2Library">
+<msg time="2024-02-05T17:23:46.489229" level="INFO">Clicking button 'xpath://input[@class='btn btn-primary w-100 mb-3']'.</msg>
+<arg>${submit_btn}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-05T17:23:46.488234" elapsed="9.580431"/>
+</kw>
+<status status="PASS" start="2024-02-05T17:23:46.487230" elapsed="9.581435"/>
+</kw>
+<kw name="Wait Till Switch Theme Toggle button To vissible" owner="LoginModKeyWords">
+<kw name="Wait Until Element Is Visible" owner="Selenium2Library">
+<arg>${switch_theme}</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-02-05T17:23:56.070795" elapsed="6.074473"/>
+</kw>
+<status status="PASS" start="2024-02-05T17:23:56.070795" elapsed="6.074473"/>
+</kw>
+<kw name="Click on Switch Theme Toggle button" owner="LoginModKeyWords">
+<kw name="Click Element" owner="Selenium2Library">
+<msg time="2024-02-05T17:24:02.150260" level="INFO">Clicking element 'xpath://label[@class='mb-0 theme-control-toggle-label theme-control-toggle-dark']'.</msg>
+<arg>${switch_theme}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-05T17:24:02.147264" elapsed="6.196217"/>
+</kw>
+<status status="PASS" start="2024-02-05T17:24:02.146250" elapsed="6.197231"/>
+</kw>
+<status status="PASS" start="2024-02-05T17:22:50.002383" elapsed="78.343630"/>
+</test>
+<status status="PASS" start="2024-02-05T17:22:49.634815" elapsed="78.714200"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tasks</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="TcloginPage">TcloginPage</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
